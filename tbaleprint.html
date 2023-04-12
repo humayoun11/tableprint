@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Print</title>
+  </head>
+  <style>
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 20%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .form-group input {
+        width: calc(100% - 20px);
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <div class="form-group">
+      <label for="name">Enter which number you want see table</label>
+      <input type="number" id="tablenumber" placeholder="table number" />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Where you want start the table</label>
+      <input type="number" id="startnumber" placeholder="start number" />
+    </div>
+
+    <div class="form-group">
+      <label for="message">where you want end your table</label>
+      <input type="number" id="endnumber" placeholder="End number" />
+    </div>
+
+    <button class="btn" onclick="start()">Start</button>
+  </body>
+  <script src="tableprint.js"></script>
+</html>
